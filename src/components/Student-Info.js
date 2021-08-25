@@ -11,7 +11,7 @@ export default class StudentInfo extends Component {
             selectedDayofMonth: '30', // 15th, 16th so on
             startTime: '4:00pm',
             endTime: '5:00pm',
-            lessonName: 'Maths',
+            lessonName: 'Mathematical Methods',
             tutorName: 'Steve',
             timeLeft: '0'
         }
@@ -20,30 +20,28 @@ export default class StudentInfo extends Component {
     render() {
         return (
             <div className="oval-container">
-                <div>
+                <div className="next-lesson">
                     <h3>Your Next Lesson is in {this.calculateTime()}</h3> 
-                    
-                    <p id="days"></p>
-                     <p id="hours"></p>
-                     <p id="mins"></p>
-                    <p id="secs"></p>
                 </div>
                 <div className="student-info-circle">
-                    <div className="sideline"></div>
-                <div className="details">
-                    Student <br/>{this.state.studentName}
+                    <a href="#" className=""><div className="sideline"></div></a>
+                <div className="details border-right-div">
+                   <div className="bold-font"> Student </div> {this.state.studentName}
                 </div>
-                 <div className="details">
+                 <div className="details border-right-div">
                      <div>
-                    {this.state.day},
-                    {this.state.month}
-                    {this.state.selectedDayofMonth}
-                     </div><div>
+                     <div className="bold-font">
+                    {this.state.day},&nbsp;
+                    {this.state.month}&nbsp;
+                    {this.state.selectedDayofMonth} </div>
+                     </div>
+                     <div>
                          {this.state.startTime} - {this.state.endTime}
                      </div>
                 </div>
                 <div className="details">
-                    {this.state.lessonName} by {this.state.tutorName}
+                <div className="bold-font"> 
+                   {this.state.lessonName} </div> with  {this.state.tutorName}
                 </div>
             </div>
             <div className="add-btn-cnt">

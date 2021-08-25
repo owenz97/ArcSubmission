@@ -7,8 +7,10 @@ export default class Footer extends Component {
                 <button class="footer-button btn1">Yearly Lesson Plan</button>
                 <button class="footer-button btn2">View Semester Reports</button>
                 <button class="footer-button btn3">Guest Speakers</button>
-                <button class="footer-button btn4">Explore Other Tutors</button>                
+                <button class="footer-button btn4">Explore Other Tutors</button>   
+                             
             </div>
+           
         )
     }
 }
